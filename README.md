@@ -182,8 +182,24 @@ WhereToMallorca.txt
 
 
 
-- 4) choose one more with two examples 
+- 4) -w
+This command-line is an option with the grep command which matches only whole words where it will search in files in the current directory and try to find the matching whole words. 
+- a) First Example, trying to find the word "Official" is the (HistoryJapan.txt) text file. 
+`````
+ayahsmacbook.@Ayahss-MacBook-Pro berlitz1 % grep -w "official" HistoryJapan.txt
+        According to the earliest official accounts, the
+        cycle. Thus, 660 b.c. is still the official date celebrated
+        Nikko. Combining Shinto ritual with official Buddhist conformity, they
+`````
+- The ouput of trying to find the word (Official) in the (HistoryJapan.txt) text file gives the content of where the whole word appeared in the text file. 
   
+- b) Second example here I was trying to find the matching words that have part of the word I am searching. 
+`````
+ayahsmacbook.@Ayahss-MacBook-Pro berlitz1 % grep -w "Offici" HistoryJapan.txt
+`````
+
+- In this example there was not output, altough I know that the word "official" appears in the HistoryJapan.txt file, the command-line did not give output because I am only searching part of the word which is "Offici" which is now the whole word. 
+- The -w comman-line is helpful if you are trying to  be very spedific and exact with what you are searching because it will only give you the exact (the whole word) you are looking for in a text file.  
 
 
  
